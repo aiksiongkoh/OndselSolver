@@ -20,6 +20,7 @@ namespace MbD {
         double getValue() override;
         Symsptr differentiateWRTx() override;
         Symsptr clonesptr() override;
+        Symsptr copyWith(Symsptr arg) override;
 
         std::ostream& printOn(std::ostream& s) const override;
 

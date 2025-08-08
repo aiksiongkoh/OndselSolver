@@ -15,12 +15,15 @@ namespace MbD {
     {
         //pn = a0*x^0 + a1*x^1 ... an*x^n
     public:
+        Polynomial() = default;
+        Polynomial(Symsptr arg);
         Polynomial(Symsptr var, std::shared_ptr<std::vector<double>> coeffs);
         Polynomial(Symsptr var, std::shared_ptr<std::vector<Symsptr>> coeffs);
         Symsptr expandUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
         Symsptr simplifyUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
         Symsptr differentiateWRTx() override;
         Symsptr integrateWRT(Symsptr var) override;
+        Symsptr copyWith(Symsptr arg) override;
         double getValue() override;
         void setIntegrationConstant(double integConstant) override;
 

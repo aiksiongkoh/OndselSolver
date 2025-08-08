@@ -11,6 +11,10 @@
 
 using namespace MbD;
 
+MbD::ExpressionX::ExpressionX(Symsptr arg) : FunctionX(arg)
+{
+}
+
 void MbD::ExpressionX::xexpression(Symsptr arg, Symsptr func)
 {
 	//"

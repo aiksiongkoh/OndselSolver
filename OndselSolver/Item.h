@@ -22,7 +22,7 @@ namespace MbD {
 	class Constraint;
 	class StateData;
 
-	class Item
+	class Item : public std::enable_shared_from_this<Item>
 	{
 		//name
 	public:

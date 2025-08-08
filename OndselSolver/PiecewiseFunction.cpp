@@ -12,9 +12,8 @@
 
 using namespace MbD;
 
-MbD::PiecewiseFunction::PiecewiseFunction()
+MbD::PiecewiseFunction::PiecewiseFunction(Symsptr arg) : FunctionXcParameter(arg)
 {
-	noop();
 }
 
 MbD::PiecewiseFunction::PiecewiseFunction(Symsptr var, std::shared_ptr<std::vector<Symsptr>> funcs, std::shared_ptr<std::vector<Symsptr>> trans)
@@ -120,4 +119,9 @@ std::ostream& MbD::PiecewiseFunction::printOn(std::ostream& s) const
 	}
 	s << "})" << std::endl;
 	return s;
+}
+
+Symsptr MbD::PiecewiseFunction::copyWith(Symsptr arg)
+{
+	return std::make_shared<PiecewiseFunction>(arg, functions, transitions);
 }

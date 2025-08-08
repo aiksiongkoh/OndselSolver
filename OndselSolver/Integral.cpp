@@ -2,6 +2,10 @@
 
 using namespace MbD;
 
+MbD::Integral::Integral(Symsptr arg) : ExpressionX(arg)
+{
+}
+
 MbD::Integral::Integral(Symsptr, Symsptr)
 {
 	assert(false);
@@ -47,4 +51,9 @@ std::ostream& MbD::Integral::printOn(std::ostream& s) const
 	s << *expression << " + ";
 	s << *integrationConstant;
 	return s;
+}
+
+Symsptr MbD::Integral::copyWith(Symsptr arg)
+{
+	return std::make_shared<Integral>(arg);
 }

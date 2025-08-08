@@ -20,8 +20,9 @@ namespace MbD {
 	public:
 		FunctionX() = default;
 		FunctionX(Symsptr arg);
+		void setX(Symsptr arg);
 		void arguments(Symsptr args) override;
-		virtual Symsptr copyWith(Symsptr arg);
+		virtual Symsptr copyWith(Symsptr arg) = 0;
 		Symsptr expandUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
 		Symsptr simplifyUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
 		Symsptr differentiateWRT(Symsptr var) override;
