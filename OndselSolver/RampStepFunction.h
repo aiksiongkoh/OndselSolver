@@ -15,10 +15,12 @@ namespace MbD {
     {
     public:
         RampStepFunction() = default;
+        RampStepFunction(Symsptr arg);
         RampStepFunction(Symsptr var, std::shared_ptr<std::vector<double>> consts, std::shared_ptr<std::vector<double>> trans);
         void arguments(Symsptr args) override;
         void initFunctionsTransitions(Symsptr var, double x0, double y0, double x1, double y1);
         void initFunctionsTransitions(Symsptr var, double x0, double y0, double x1, double y1, Symsptr symx0, Symsptr symy0, Symsptr symx1, Symsptr symy1);
+        Symsptr copyWith(Symsptr arg) override;
 
     };
 }

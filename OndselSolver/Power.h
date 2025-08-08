@@ -19,9 +19,12 @@ namespace MbD {
         Power(Symsptr base, Symsptr exp);
         Symsptr differentiateWRTx() override;
         Symsptr differentiateWRTy() override;
-
+        Symsptr copyWith(Symsptr argx, Symsptr argy) override;
+        Symsptr clonesptr() override;
         Symsptr simplifyUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
         double getValue() override;
+
+        std::ostream& printOn(std::ostream& s) const override;
 
     };
 }

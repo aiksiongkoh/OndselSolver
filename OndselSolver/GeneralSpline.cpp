@@ -259,3 +259,10 @@ std::ostream& MbD::GeneralSpline::printOn(std::ostream& s) const
 	s << "})" << std::endl;
 	return s;
 }
+
+Symsptr MbD::GeneralSpline::copyWith(Symsptr arg)
+{
+	auto clone = clonesptr();
+	std::static_pointer_cast<FunctionX>(clone)->setX(arg);
+	return clone;
+}

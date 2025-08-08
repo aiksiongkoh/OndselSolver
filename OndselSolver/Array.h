@@ -78,13 +78,17 @@ namespace MbD {
 			this->at(i) = x->at(i);
 		}
 	}
-	template<typename T>
-	inline void Array<T>::zeroSelf()
-	{
-		for (size_t i = 0; i < this->size(); i++) {
-			this->at(i) = (T)0;
-		}
-	}
+    template<typename T>
+    inline void Array<T>::zeroSelf()
+    {
+        for (size_t i = 0; i < this->size(); i++) {
+            if constexpr (std::is_pointer<T>::value) {
+                this->at(i) = nullptr; // Assign nullptr for pointer types
+            } else {
+                this->at(i) = T(); // Use default constructor for non-pointer types
+            }
+        }
+    }
 	template<typename T>
 	inline double Array<T>::rootMeanSquare()
 	{

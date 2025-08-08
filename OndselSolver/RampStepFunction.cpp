@@ -6,9 +6,12 @@
 
 using namespace MbD;
 
+MbD::RampStepFunction::RampStepFunction(Symsptr arg) : PiecewiseFunction(arg)
+{
+}
+
 MbD::RampStepFunction::RampStepFunction(Symsptr var, std::shared_ptr<std::vector<double>> consts, std::shared_ptr<std::vector<double>> trans)
 {
-
 	double x0 = trans->at(0);
 	double x1 = trans->at(1);
 	double y0 = consts->at(0);
@@ -59,4 +62,9 @@ void MbD::RampStepFunction::initFunctionsTransitions(Symsptr var, double x0, dou
 	functions->push_back(func2);
 	transitions->push_back(symx0);
 	transitions->push_back(symx1);
+}
+
+Symsptr MbD::RampStepFunction::copyWith(Symsptr arg)
+{
+	return std::make_shared<RampStepFunction>(arg);
 }

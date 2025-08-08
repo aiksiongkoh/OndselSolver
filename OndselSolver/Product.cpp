@@ -5,7 +5,7 @@
  *                                                                         *
  *   See LICENSE file for details about copyright.                         *
  ***************************************************************************/
- 
+
 #include <algorithm>
 #include <iterator>
 
@@ -24,7 +24,7 @@ Symsptr MbD::Product::differentiateWRT(Symsptr var)
 	std::transform(terms->begin(),
 		terms->end(),
 		std::back_inserter(*derivatives),
-		[var](Symsptr term) { 
+		[var](Symsptr term) {
 			return term->differentiateWRT(var);
 		}
 	);
@@ -162,7 +162,22 @@ bool Product::isProduct()
 double Product::getValue()
 {
 	double answer = 1.0;
-	for (size_t i = 0; i < terms->size(); i++) answer *= terms->at(i)->getValue();
+	bool hasInfinity = false;
+	for (size_t i = 0; i < terms->size(); i++)
+	{
+		double termValue = terms->at(i)->getValue();
+		if (termValue == 0.0) {
+			return 0.0; // If any term is zero, the product is zero
+		}
+		if (std::isfinite(termValue)) {
+			answer *= termValue;
+		}
+		else {
+			hasInfinity = true;
+			//Continue to look for a zero term.
+		}
+	}
+	assert(!hasInfinity);
 	return answer;
 }
 

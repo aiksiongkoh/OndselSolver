@@ -14,6 +14,10 @@
 
 using namespace MbD;
 
+MbD::Polynomial::Polynomial(Symsptr arg) : FunctionXcParameter(arg)
+{
+}
+
 MbD::Polynomial::Polynomial(Symsptr var, std::shared_ptr<std::vector<double>> coefficients)
 {
 	assert(!coefficients->empty());
@@ -119,4 +123,11 @@ std::ostream& MbD::Polynomial::printOn(std::ostream& s) const
 	}
 	s << "})";
 	return s;
+}
+
+Symsptr MbD::Polynomial::copyWith(Symsptr arg)
+{
+	auto clone = clonesptr();
+	std::static_pointer_cast<FunctionX>(clone)->setX(arg);
+	return clone;
 }

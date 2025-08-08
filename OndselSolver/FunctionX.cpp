@@ -19,6 +19,11 @@ MbD::FunctionX::FunctionX(Symsptr arg) : xx(arg)
 {
 }
 
+void MbD::FunctionX::setX(Symsptr arg)
+{
+	xx = arg;
+}
+
 void MbD::FunctionX::arguments(Symsptr args)
 {
 	auto arguments = std::static_pointer_cast<Arguments>(args);
@@ -26,9 +31,10 @@ void MbD::FunctionX::arguments(Symsptr args)
 	xx = arguments->terms->front();
 }
 
-Symsptr MbD::FunctionX::copyWith(Symsptr self)
+Symsptr MbD::FunctionX::copyWith(Symsptr arg)
 {
-	return self;
+	assert(false);
+	return Symsptr();
 }
 
 Symsptr MbD::FunctionX::expandUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set)
