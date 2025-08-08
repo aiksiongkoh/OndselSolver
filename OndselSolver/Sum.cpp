@@ -126,6 +126,7 @@ double Sum::getValue()
 {
 	double answer = 0.0;
 	for (size_t i = 0; i < terms->size(); i++) answer += terms->at(i)->getValue();
+	assert(std::isfinite(answer));
 	return answer;
 }
 

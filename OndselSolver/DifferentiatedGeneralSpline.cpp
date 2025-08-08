@@ -37,3 +37,10 @@ std::ostream& MbD::DifferentiatedGeneralSpline::printOn(std::ostream& s) const
 	s << "deriv(" << *generalSpline << ", " << derivativeOrder << ")";
 	return s;
 }
+
+Symsptr MbD::DifferentiatedGeneralSpline::copyWith(Symsptr arg)
+{
+	auto clone = clonesptr();
+	std::static_pointer_cast<FunctionX>(clone)->setX(arg);
+	return clone;
+}

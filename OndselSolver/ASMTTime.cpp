@@ -22,6 +22,10 @@ std::shared_ptr<ASMTTime> MbD::ASMTTime::With()
 	return asmt;
 }
 
+MbD::ASMTTime::ASMTTime(Symsptr arg) : ExpressionX(arg)
+{
+}
+
 void MbD::ASMTTime::deleteMbD()
 {
 	xx = nullptr;
@@ -55,4 +59,9 @@ bool MbD::ASMTTime::isVariable()
 void MbD::ASMTTime::setValue(double val)
 {
 	xx->setValue(val);
+}
+
+Symsptr MbD::ASMTTime::copyWith(Symsptr arg)
+{
+	return std::make_shared<ASMTTime>(arg);
 }

@@ -32,6 +32,7 @@ namespace MbD {
 		void calcIndexAndDelta();
 		void searchIndexFromto(size_t start, size_t end);
 		Symsptr clonesptr() override;
+		Symsptr copyWith(Symsptr arg) override;
 		double y(double xxx);
 
 		std::ostream& printOn(std::ostream& s) const override;

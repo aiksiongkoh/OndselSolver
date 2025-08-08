@@ -16,10 +16,12 @@ namespace MbD {
 	{
 	public:
 		Integral() = default;
+		Integral(Symsptr arg);
 		Integral(Symsptr var, Symsptr integrand);
 		void arguments(Symsptr args) override;
 		Symsptr expandUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
 		Symsptr simplifyUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>> set) override;
+		Symsptr copyWith(Symsptr arg) override;
 		void setIntegrationConstant(double integConstant) override;
 
 		std::ostream& printOn(std::ostream& s) const override;
