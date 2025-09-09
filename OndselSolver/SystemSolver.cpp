@@ -38,7 +38,7 @@ using namespace MbD;
 void SystemSolver::setSystem(Solver*)
 {
 	//Do not use
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void SystemSolver::initialize()
@@ -297,7 +297,7 @@ std::shared_ptr<std::vector<std::shared_ptr<Constraint>>> SystemSolver::allConst
 
 void SystemSolver::postNewtonRaphson()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void SystemSolver::partsJointsMotionsForcesTorquesDo(const std::function<void(std::shared_ptr<Item>)>& f)
@@ -317,7 +317,7 @@ void MbD::SystemSolver::partsJointsMotionsLimitsForcesTorquesDo(const std::funct
 
 void SystemSolver::discontinuityBlock()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 double SystemSolver::startTime()

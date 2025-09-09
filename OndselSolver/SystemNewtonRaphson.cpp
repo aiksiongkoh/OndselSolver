@@ -29,7 +29,7 @@ void SystemNewtonRaphson::initializeGlobally()
 
 void MbD::SystemNewtonRaphson::assignEquationNumbers()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void SystemNewtonRaphson::createVectorsAndMatrices()
@@ -79,7 +79,7 @@ void SystemNewtonRaphson::handleSingularMatrix()
             matrixSolver->throwSingularMatrixError("SystemNewtonRaphson");
 		}
 		else {
-			assert(false);
+			throw SimulationStoppingError("To be implemented.");
 		}
 	}
 }

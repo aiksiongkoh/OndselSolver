@@ -26,330 +26,330 @@ bool MbD::KinematicIeJe::isKineIJ()
 
 void MbD::KinematicIeJe::calc_pvaluepXI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluepEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpXI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEIpEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluepXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluepEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEIpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEIpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXJpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXJpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEJpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluepXK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluepEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEIpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXJpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEJpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEKpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_pvaluept()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvalueptpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_value()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXIpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEIpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXJpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEJpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepXKpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::KinematicIeJe::calc_ppvaluepEKpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepXI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXIpXI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXIpEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEIpEI()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXIpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXIpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEIpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEIpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXJpXJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXJpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEJpEJ()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepXK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::pvaluepEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXIpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEIpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepXJpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEJpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 FMatDsptr MbD::KinematicIeJe::ppvaluepEKpEK()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FMatDsptr();
 }
 
 double MbD::KinematicIeJe::pvaluept()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return 0.0;
 }
 
 double MbD::KinematicIeJe::ppvalueptpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return 0.0;
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepXIpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepEIpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepXJpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepEJpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepXKpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 FRowDsptr MbD::KinematicIeJe::ppvaluepEKpt()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return FRowDsptr();
 }
 
 double MbD::KinematicIeJe::value()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
     return 0.0;
 }

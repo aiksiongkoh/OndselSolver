@@ -55,5 +55,5 @@ void GEFullMatFullPv::doPivoting(size_t p)
 
 void GEFullMatFullPv::postSolve()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

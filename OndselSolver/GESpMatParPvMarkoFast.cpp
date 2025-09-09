@@ -16,7 +16,7 @@ using namespace MbD;
 
 void GESpMatParPvMarkoFast::preSolvewithsaveOriginal(SpMatDsptr spMat, FColDsptr fullCol, bool saveOriginal)
 {
-	//assert(false);
+	//throw SimulationStoppingError("To be implemented.");
 	//"Optimized for speed."
 	if (m != spMat->nrow() || n != spMat->ncol()) {
 		m = spMat->nrow();

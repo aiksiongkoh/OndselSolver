@@ -35,17 +35,17 @@ void MbD::RackPinConstraintIJ::calcPostDynCorrectorIteration()
 
 void MbD::RackPinConstraintIJ::init_xthez()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::RackPinConstraintIJ::initxIeJeIe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::RackPinConstraintIJ::initthezIeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::RackPinConstraintIJ::initialize()

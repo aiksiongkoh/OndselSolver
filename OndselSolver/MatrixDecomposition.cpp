@@ -12,7 +12,7 @@ using namespace MbD;
 
 FColDsptr MbD::MatrixDecomposition::forAndBackSubsaveOriginal(FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
@@ -28,31 +28,31 @@ void MatrixDecomposition::applyRowOrderOnRightHandSideB()
 
 FColDsptr MbD::MatrixDecomposition::basicSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
 void MbD::MatrixDecomposition::forwardSubstituteIntoL()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::MatrixDecomposition::backSubstituteIntoU()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::MatrixDecomposition::forwardSubstituteIntoLD()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::MatrixDecomposition::postSolve()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::MatrixDecomposition::preSolvesaveOriginal(FMatDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

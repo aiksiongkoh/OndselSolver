@@ -50,7 +50,7 @@ void MbD::AllowZRotationConstraintIqctJqc::postInput()
 void MbD::AllowZRotationConstraintIqctJqc::postPosIC()
 {
 	//self becomeRedundantConstraint
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 std::string MbD::AllowZRotationConstraintIqctJqc::constraintSpec()

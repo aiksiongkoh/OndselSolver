@@ -13,10 +13,10 @@ using namespace MbD;
 
 void MbD::ASMTRefCurve::parseASMT(std::vector<std::string>&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTRefCurve::storeOnLevel(std::ofstream&, size_t)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

@@ -15,6 +15,7 @@
 #include "RowTypeMatrix.h"
 #include "FullColumn.h"
 #include "FullRow.h"
+#include "SimulationStoppingError.h"
 
 namespace MbD {
 	template<typename T>
@@ -395,7 +396,7 @@ namespace MbD {
 	template<typename T>
 	inline FMatsptr<T> FullMatrix<T>::times(T)
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline FMatsptr<T> FullMatrix<T>::transposeTimesFullMatrix(FMatsptr<T> fullMat)
@@ -499,13 +500,13 @@ namespace MbD {
 	template<typename T>
 	inline double FullMatrix<T>::sumOfSquares()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return 0.0;
 	}
 	template<typename T>
 	inline void FullMatrix<T>::zeroSelf()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline FMatsptr<T> FullMatrix<T>::copy()

@@ -13,7 +13,7 @@ using namespace MbD;
 
 void ScalarNewtonRaphson::initializeGlobally()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//x = system->x;
 }
 

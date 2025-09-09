@@ -32,13 +32,13 @@ FColDsptr MbD::LinearMultiStepMethod::derivativeatpresentpast(size_t n, double t
 
 FColDsptr MbD::LinearMultiStepMethod::derivativepresentpast(size_t, FColDsptr, std::shared_ptr<std::vector<FColDsptr>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
 double MbD::LinearMultiStepMethod::pvdotpv()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
@@ -51,6 +51,6 @@ FColDsptr MbD::LinearMultiStepMethod::derivativepresentpastpresentDerivativepast
 	FColDsptr, std::shared_ptr<std::vector<FColDsptr>>,
 	FColDsptr, std::shared_ptr<std::vector<FColDsptr>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }

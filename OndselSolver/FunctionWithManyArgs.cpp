@@ -49,7 +49,7 @@ void MbD::FunctionWithManyArgs::createMbD(std::shared_ptr<System> mbdSys, std::s
 
 void MbD::FunctionWithManyArgs::arguments(Symsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 bool MbD::FunctionWithManyArgs::isConstant()

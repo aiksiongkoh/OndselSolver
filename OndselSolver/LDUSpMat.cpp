@@ -20,17 +20,17 @@ FColDsptr LDUSpMat::basicSolvewithsaveOriginal(SpMatDsptr spMat, FColDsptr fullC
 
 void LDUSpMat::decomposesaveOriginal(FMatDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void LDUSpMat::decomposesaveOriginal(SpMatDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 FColDsptr LDUSpMat::forAndBackSubsaveOriginal(FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 

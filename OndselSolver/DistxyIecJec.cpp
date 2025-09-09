@@ -45,7 +45,7 @@ void MbD::DistxyIecJec::initializeLocally()
 
 void MbD::DistxyIecJec::init_xyIeJeIe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::DistxyIecJec::postInput()

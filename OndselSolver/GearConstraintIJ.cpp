@@ -50,7 +50,7 @@ void MbD::GearConstraintIJ::initializeLocally()
 
 void MbD::GearConstraintIJ::initorbitsIJ()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::GearConstraintIJ::postInput()

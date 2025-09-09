@@ -11,6 +11,7 @@
 #include "IntegratorInterface.h"
 #include "SystemSolver.h"
 #include "BasicQuasiIntegrator.h"
+#include "SimulationStoppingError.h"
 
 using namespace MbD;
 
@@ -60,7 +61,7 @@ void IntegratorInterface::incrementTime(double tnew)
 
 void IntegratorInterface::postFirstStep()
 {
-	assert(false);	//Not used.
+	throw SimulationStoppingError("To be implemented.");	//Not used.
 	//system->postFirstStep();
 	//if (integrator->istep > 0) {
 	//	//"Noise make checking at the start unreliable."
@@ -72,7 +73,7 @@ void IntegratorInterface::postFirstStep()
 void IntegratorInterface::interpolateAt(double)
 {
 	//"Interpolate for system state at tArg and leave system in that state."
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//auto yout = integrator->yDerivat(0, tArg);
 	//auto ydotout = integrator->yDerivat(1, tArg);
 	//auto yddotout = integrator->yDerivat(2, tArg);

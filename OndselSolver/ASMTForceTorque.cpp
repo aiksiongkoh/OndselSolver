@@ -12,15 +12,15 @@ using namespace MbD;
 
 void MbD::ASMTForceTorque::updateFromMbD()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTForceTorque::compareResults(AnalysisType)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTForceTorque::outputResults(AnalysisType)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

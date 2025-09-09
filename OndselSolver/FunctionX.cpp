@@ -33,7 +33,7 @@ void MbD::FunctionX::arguments(Symsptr args)
 
 Symsptr MbD::FunctionX::copyWith(Symsptr arg)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return Symsptr();
 }
 
@@ -75,7 +75,7 @@ Symsptr MbD::FunctionX::differentiateWRT(Symsptr var)
 
 Symsptr MbD::FunctionX::differentiateWRTx()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return Symsptr();
 }
 
@@ -86,7 +86,7 @@ void MbD::FunctionX::createMbD(std::shared_ptr<System> mbdSys, std::shared_ptr<U
 
 double MbD::FunctionX::getValue()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
@@ -100,7 +100,7 @@ double MbD::FunctionX::getValue(double arg)
 		xx->setValue(oldVal);
 	}
 	else {
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	return answer;
 }

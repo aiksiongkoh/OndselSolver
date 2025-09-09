@@ -492,7 +492,7 @@ void MbD::SymbolicParser::notifyat(const std::string&, int) const
 	source->seekg(0);
 	auto contents = source->str();
 	source->seekg(p);
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//SyntaxErrorException new
 	//targetClass : class;
 	//messageText: aString;
