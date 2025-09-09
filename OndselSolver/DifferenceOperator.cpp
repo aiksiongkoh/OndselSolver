@@ -47,7 +47,7 @@ void DifferenceOperator::initialize()
 
 void MbD::DifferenceOperator::initializeLocally()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void DifferenceOperator::setiStep(size_t i)

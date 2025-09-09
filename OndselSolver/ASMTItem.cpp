@@ -53,7 +53,7 @@ void MbD::ASMTItem::setName(const std::string& str)
 
 void MbD::ASMTItem::parseASMT(std::vector<std::string>&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 std::string MbD::ASMTItem::popOffTop(std::vector<std::string>& args)
@@ -141,7 +141,7 @@ bool MbD::ASMTItem::readBool(const std::string& line)
 		return false;
 	}
 	else {
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return false;
 	}
 }
@@ -188,37 +188,37 @@ void MbD::ASMTItem::deleteMbD()
 void MbD::ASMTItem::createMbD(std::shared_ptr<System>, std::shared_ptr<Units>)
 {
 	noop();
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::updateForFrame([[maybe_unused]] size_t index)
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::updateFromInitiallyAssembledState()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::updateFromInputState()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::updateFromMbD()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::compareResults(AnalysisType)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::outputResults(AnalysisType)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 std::shared_ptr<Units> MbD::ASMTItem::mbdUnits()
@@ -301,7 +301,7 @@ void MbD::ASMTItem::storeOnLevelName(std::ofstream& os, size_t level)
 
 void MbD::ASMTItem::storeOnTimeSeries(std::ofstream&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTItem::logString(const std::string& str)

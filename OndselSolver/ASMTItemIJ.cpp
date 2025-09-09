@@ -175,6 +175,6 @@ void MbD::ASMTItemIJ::createMbD(std::shared_ptr<System> mbdSys, std::shared_ptr<
 
 std::shared_ptr<ItemIJ> MbD::ASMTItemIJ::mbdClassNew()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return std::shared_ptr<ItemIJ>();
 }

@@ -33,7 +33,7 @@ void MbD::AngleZConstraintIJ::calcPostDynCorrectorIteration()
 
 void MbD::AngleZConstraintIJ::initthezIeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::AngleZConstraintIJ::initialize()

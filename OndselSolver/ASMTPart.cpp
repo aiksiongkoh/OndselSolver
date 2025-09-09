@@ -55,7 +55,7 @@ void MbD::ASMTPart::readFeatureOrder(std::vector<std::string>& lines)
 	//		extrusion->owner = this;
 	//	}
 	//	else {
-	//		assert(false);
+	//		throw SimulationStoppingError("To be implemented.");
 	//	}
 	//}
 	lines.erase(lines.begin(), it);

@@ -12,7 +12,7 @@ bool MbD::LimitIJ::satisfied() const
 	else if (type == "=>") {
 		return constraint->aG > -tol;
 	}
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return true;
 }
 

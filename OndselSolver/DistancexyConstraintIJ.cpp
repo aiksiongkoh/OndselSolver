@@ -34,7 +34,7 @@ void MbD::DistancexyConstraintIJ::calcPostDynCorrectorIteration()
 
 void MbD::DistancexyConstraintIJ::init_xyIeJeIe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::DistancexyConstraintIJ::initialize()

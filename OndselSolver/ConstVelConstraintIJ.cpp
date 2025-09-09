@@ -34,12 +34,12 @@ void ConstVelConstraintIJ::calcPostDynCorrectorIteration()
 
 void MbD::ConstVelConstraintIJ::initA01IeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ConstVelConstraintIJ::initA10IeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void ConstVelConstraintIJ::initialize()

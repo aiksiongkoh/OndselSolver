@@ -19,18 +19,18 @@ FColDsptr LDUFullMat::basicSolvewithsaveOriginal(FMatDsptr fullMat, FColDsptr fu
 
 FColDsptr LDUFullMat::basicSolvewithsaveOriginal(SpMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
 void LDUFullMat::preSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void LDUFullMat::preSolvewithsaveOriginal(SpMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void LDUFullMat::forwardEliminateWithPivot(size_t p)
@@ -57,7 +57,7 @@ void LDUFullMat::forwardEliminateWithPivot(size_t p)
 
 void LDUFullMat::postSolve()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void LDUFullMat::preSolvesaveOriginal(FMatDsptr fullMat, bool saveOriginal)
@@ -107,7 +107,7 @@ void LDUFullMat::decomposesaveOriginal(FMatDsptr fullMat, bool saveOriginal)
 
 void LDUFullMat::decomposesaveOriginal(SpMatDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 FMatDsptr LDUFullMat::inversesaveOriginal(FMatDsptr fullMat, bool saveOriginal)

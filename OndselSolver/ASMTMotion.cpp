@@ -36,12 +36,12 @@ void ASMTMotion::initMarkers()
 
 void ASMTMotion::storeOnLevel(std::ofstream&, size_t)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void ASMTMotion::storeOnTimeSeries(std::ofstream&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTMotion::createMbD(std::shared_ptr<System> mbdSys, std::shared_ptr<Units> mbdUnits)

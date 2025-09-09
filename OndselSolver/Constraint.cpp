@@ -112,7 +112,7 @@ void Constraint::fillPosICError(FColDsptr col)
 void Constraint::removeRedundantConstraints(std::shared_ptr<std::vector<size_t>>)
 {
 	//My owner should handle this.
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Constraint::setConstant(double value)
@@ -123,7 +123,7 @@ void MbD::Constraint::setConstant(double value)
 void Constraint::reactivateRedundantConstraints()
 {
 	//My owner should handle this.
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 bool Constraint::isRedundant()

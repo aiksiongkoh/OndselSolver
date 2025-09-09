@@ -11,6 +11,7 @@
 #include <ostream>
 
 #include "Array.h"
+#include "SimulationStoppingError.h"
 
 namespace MbD {
 	template<typename T>
@@ -80,7 +81,7 @@ namespace MbD {
 	template<typename T>
 	inline double FullVector<T>::sumOfSquares()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return 0.0;
 	}
 	template<typename T>
@@ -98,7 +99,7 @@ namespace MbD {
 	template<typename T>
 	inline void FullVector<T>::zeroSelf()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline void FullVector<T>::atiplusFullVector(size_t i1, std::shared_ptr<FullVector<T>> fullVec)
@@ -141,7 +142,7 @@ namespace MbD {
 	template<typename T>
 	inline double FullVector<T>::maxMagnitude()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return 0.0;
 	}
 	template<>
@@ -190,7 +191,7 @@ namespace MbD {
 	inline std::shared_ptr<FullVector<T>> FullVector<T>::clonesptr()
 	{
 		//Return shallow copy of *this wrapped in shared_ptr
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return std::make_shared<FullVector<T>>(*this);
 	}
 	template<typename T>

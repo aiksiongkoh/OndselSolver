@@ -37,7 +37,7 @@ void VelSolver::handleSingularMatrix()
             matrixSolver->throwSingularMatrixError("VelSolver");
         }
 		else {
-			assert(false);
+			throw SimulationStoppingError("To be implemented.");
 		}
 	}
 }

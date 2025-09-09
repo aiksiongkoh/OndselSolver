@@ -119,7 +119,7 @@ void MbD::ASMTSpatialContainer::readRefCurves(std::vector<std::string>& lines)
 
 void MbD::ASMTSpatialContainer::readRefCurve(std::vector<std::string>&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTSpatialContainer::readRefSurfaces(std::vector<std::string>& lines)
@@ -139,7 +139,7 @@ void MbD::ASMTSpatialContainer::readRefSurfaces(std::vector<std::string>& lines)
 
 void MbD::ASMTSpatialContainer::readRefSurface(std::vector<std::string>&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTSpatialContainer::readXs(std::vector<std::string>& lines)
@@ -345,13 +345,13 @@ std::shared_ptr<EulerParameters<double>> MbD::ASMTSpatialContainer::qEp()
 
 FColDsptr MbD::ASMTSpatialContainer::vOcmO()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
 FColDsptr MbD::ASMTSpatialContainer::omeOpO()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 

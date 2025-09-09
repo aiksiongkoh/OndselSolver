@@ -383,7 +383,7 @@ inline std::shared_ptr<EulerParameters<double>> EulerParameters<double>::times(d
 template<typename T>
 inline std::shared_ptr<EulerParameters<T>> EulerParameters<T>::times(T)
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 template<typename T>
 inline std::shared_ptr<EulerParameters<T>>

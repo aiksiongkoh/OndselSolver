@@ -52,12 +52,12 @@ void EndFramec::initializeLocally()
 
 void EndFramec::initEndFrameqct()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::EndFramec::initEndFrameqct2()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void EndFramec::calcPostDynCorrectorIteration()

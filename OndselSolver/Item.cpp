@@ -56,25 +56,25 @@ void Item::initializeLocally()
 
 bool MbD::Item::isJointForce()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return false;
 }
 
 bool MbD::Item::isJointTorque()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return false;
 }
 
 bool MbD::Item::isKinedotIJ()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return false;
 }
 
 bool MbD::Item::isKineIJ()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return false;
 }
 
@@ -94,7 +94,7 @@ void Item::calcPostDynCorrectorIteration()
 
 void MbD::Item::checkForCollisionDiscontinuityBetweenand(double, double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::removeRedundantConstraints(std::shared_ptr<std::vector<size_t>>)
@@ -103,17 +103,17 @@ void Item::removeRedundantConstraints(std::shared_ptr<std::vector<size_t>>)
 
 void MbD::Item::setpqsumu(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::setpqsumuddot(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::setpqsumudot(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::reactivateRedundantConstraints()
@@ -122,7 +122,7 @@ void Item::reactivateRedundantConstraints()
 
 void MbD::Item::registerName()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillPosKineError(FColDsptr)
@@ -135,32 +135,32 @@ void Item::fillPosKineJacob(SpMatDsptr)
 
 void MbD::Item::fillpqsumu(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillpqsumudot(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillEssenConstraints(std::shared_ptr<std::vector<std::shared_ptr<Constraint>>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillPerpenConstraints(std::shared_ptr<std::vector<std::shared_ptr<Constraint>>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillpFpy(SpMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillpFpydot(SpMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillRedundantConstraints(std::shared_ptr<std::vector<std::shared_ptr<Constraint>>>)
@@ -169,27 +169,27 @@ void Item::fillRedundantConstraints(std::shared_ptr<std::vector<std::shared_ptr<
 
 void MbD::Item::fillStaticError(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillStaticJacob(FMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillConstraints(std::shared_ptr<std::vector<std::shared_ptr<Constraint>>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillDispConstraints(std::shared_ptr<std::vector<std::shared_ptr<Constraint>>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillDynError(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillqsu(FColDsptr)
@@ -210,7 +210,7 @@ void Item::setqsulam(FColDsptr)
 
 void MbD::Item::simUpdateAll()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::preDyn()
@@ -225,12 +225,12 @@ void Item::preDyn()
 
 void MbD::Item::preDynCorrector()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preDynCorrectorIteration()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::postDyn()
@@ -245,12 +245,12 @@ void Item::postDyn()
 
 void MbD::Item::postDynCorrector()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postDynCorrectorIteration()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 std::string Item::classname()
@@ -268,12 +268,12 @@ void Item::preDynFirstStep()
 
 void MbD::Item::preDynOutput()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preDynPredictor()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::postDynFirstStep()
@@ -283,12 +283,12 @@ void Item::postDynFirstStep()
 
 void MbD::Item::postDynOutput()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postDynPredictor()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::preDynStep()
@@ -297,7 +297,7 @@ void Item::preDynStep()
 
 void MbD::Item::preICRestart()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::postDynStep()
@@ -313,13 +313,13 @@ void Item::storeDynState()
 
 double MbD::Item::suggestSmallerOrAcceptCollisionFirstStepSize(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
 double MbD::Item::suggestSmallerOrAcceptCollisionStepSize(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
@@ -357,12 +357,12 @@ void Item::fillqsudot(FColDsptr)
 
 void MbD::Item::fillqsudotPlam(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillqsudotPlamDeriv(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillqsudotWeights(DiagMatDsptr)
@@ -383,12 +383,12 @@ void Item::setqsudotlam(FColDsptr)
 
 void MbD::Item::setqsudotPlam(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::setqsudotPlamDeriv(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::preAccIC()
@@ -398,32 +398,32 @@ void Item::preAccIC()
 
 void MbD::Item::preCollision()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preCollisionCorrector()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preCollisionCorrectorIteration()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preCollisionDerivativeIC()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preCollisionPredictor()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::preCollisionStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::postAccIC()
@@ -436,27 +436,27 @@ void Item::postAccICIteration()
 
 void MbD::Item::postCollisionCorrector()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postCollisionCorrectorIteration()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postCollisionDerivativeIC()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postCollisionPredictor()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postCollisionStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillqsuddotlam(FColDsptr)
@@ -473,27 +473,27 @@ void Item::fillAccICIterJacob(SpMatDsptr)
 
 void MbD::Item::fillCollisionDerivativeICError(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillCollisionDerivativeICJacob(SpMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillCollisionError(FColDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillCollisionpFpy(SpMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::fillCollisionpFpydot(SpMatDsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::setqsudot(FColDsptr)
@@ -506,13 +506,13 @@ void Item::setqsuddotlam(FColDsptr)
 
 std::shared_ptr<StateData> Item::stateData()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return std::shared_ptr<StateData>();
 }
 
 void MbD::Item::storeCollisionState()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::discontinuityAtaddTypeTo(double, std::shared_ptr<std::vector<DiscontinuityType>>)
@@ -521,7 +521,7 @@ void Item::discontinuityAtaddTypeTo(double, std::shared_ptr<std::vector<Disconti
 
 void MbD::Item::discontinuityAtICAddTo(std::shared_ptr<std::vector<DiscontinuityType>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 double Item::checkForDynDiscontinuityBetweenand(double, double t)
@@ -551,17 +551,17 @@ void Item::logString(const std::string& str)
 
 void MbD::Item::logStringwithArgument(const std::string&, const std::string&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::logStringwithArguments(const std::string&, std::shared_ptr<std::vector<std::string>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::normalImpulse(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::prePosIC()
@@ -580,7 +580,7 @@ void Item::prePosKine()
 
 void MbD::Item::preStatic()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::postPosIC()
@@ -594,12 +594,12 @@ void Item::postPosICIteration()
 
 void MbD::Item::postStatic()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Item::postStaticIteration()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Item::fillPosICError(FColDsptr)

@@ -20,12 +20,12 @@ void ICKineIntegrator::runInitialConditionTypeSolution()
 
 void ICKineIntegrator::iStep(size_t)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void ICKineIntegrator::selectOrder()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void ICKineIntegrator::preRun()
@@ -36,15 +36,15 @@ void ICKineIntegrator::preRun()
 
 void ICKineIntegrator::firstStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void ICKineIntegrator::subsequentSteps()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ICKineIntegrator::nextStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

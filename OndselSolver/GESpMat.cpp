@@ -33,18 +33,18 @@ FColDsptr GESpMat::basicSolvewithsaveOriginal(SpMatDsptr spMat, FColDsptr fullCo
 
 FColDsptr GESpMat::basicSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
 void GESpMat::preSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void GESpMat::preSolvewithsaveOriginal(SpMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 double GESpMat::getmatrixArowimaxMagnitude(size_t i)

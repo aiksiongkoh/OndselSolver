@@ -121,7 +121,7 @@ void PosICNewtonRaphson::handleSingularMatrix()
 				this->lookForRedundantConstraints();
 				matrixSolver = this->matrixSolverClassNew();
 			} else {
-				assert(false);
+				throw SimulationStoppingError("To be implemented.");
 			}
 		}
 	}

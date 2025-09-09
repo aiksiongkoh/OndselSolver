@@ -40,7 +40,7 @@ namespace MbD {
 	template<typename T>
 	inline void EulerAngles<T>::initialize()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<>
 	inline void EulerAngles<Symsptr>::calc()
@@ -91,7 +91,7 @@ namespace MbD {
 	template<typename T>
 	inline void EulerAngles<T>::calc()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline std::shared_ptr<EulerAnglesDot<T>> EulerAngles<T>::differentiateWRT(T var)

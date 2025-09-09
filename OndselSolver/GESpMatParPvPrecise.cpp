@@ -78,7 +78,7 @@ void GESpMatParPvPrecise::doPivoting(size_t p)
 
 void GESpMatParPvPrecise::preSolvewithsaveOriginal(SpMatDsptr spMat, FColDsptr fullCol, bool saveOriginal)
 {
-	//assert(false);
+	//throw SimulationStoppingError("To be implemented.");
 	//"A conditioned copy of aMatrix is solved."
 	if (m != spMat->nrow() || n != spMat->ncol()) {
 		m = spMat->nrow();

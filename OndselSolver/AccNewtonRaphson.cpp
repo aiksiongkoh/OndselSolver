@@ -136,7 +136,7 @@ void MbD::AccNewtonRaphson::handleSingularMatrix()
 			this->logSingularMatrixMessage();
 			matrixSolver->throwSingularMatrixError("AccAccNewtonRaphson");
 		} else {
-			assert(false);
+			throw SimulationStoppingError("To be implemented.");
 		}
 	}
 }

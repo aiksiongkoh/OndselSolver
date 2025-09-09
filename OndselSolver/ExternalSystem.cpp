@@ -27,7 +27,7 @@ void MbD::ExternalSystem::preMbDrun(std::shared_ptr<System> mbdSys)
         //freecadAssemblyObject->preMbDrun();
     }
     else {
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 }
 
@@ -48,7 +48,7 @@ void MbD::ExternalSystem::updateFromMbD()
         //freecadAssemblyObject->updateFromMbD();
     }
     else {
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 }
 
@@ -67,7 +67,7 @@ void MbD::ExternalSystem::outputFor(AnalysisType type)
         //freecadAssemblyObject->outputResults(type);
     }
     else {
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 }
 
@@ -78,17 +78,17 @@ void MbD::ExternalSystem::logString(const std::string& str)
 
 void MbD::ExternalSystem::logString(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ExternalSystem::runOndselPiston()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ExternalSystem::runPiston()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ExternalSystem::postMbDrun()

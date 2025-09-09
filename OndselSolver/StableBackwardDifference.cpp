@@ -43,7 +43,7 @@ FColDsptr MbD::StableBackwardDifference::derivativepresentpastpresentDerivativep
         size_t, FColDsptr, std::shared_ptr<std::vector<FColDsptr>>, FColDsptr,
         std::shared_ptr<std::vector<FColDsptr>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }
 
