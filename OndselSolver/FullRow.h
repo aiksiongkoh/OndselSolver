@@ -71,7 +71,7 @@ namespace MbD {
 	template<typename T>
 	inline FRowsptr<T> FullRow<T>::times(T)
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline FRowsptr<T> FullRow<T>::negated()

@@ -37,17 +37,17 @@ void MbD::ScrewConstraintIJ::calcPostDynCorrectorIteration()
 
 void MbD::ScrewConstraintIJ::init_zthez()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ScrewConstraintIJ::initzIeJeIe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ScrewConstraintIJ::initthezIeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ScrewConstraintIJ::initialize()

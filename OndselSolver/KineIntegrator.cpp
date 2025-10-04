@@ -22,17 +22,17 @@ void KineIntegrator::preRun()
 
 void KineIntegrator::firstStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void KineIntegrator::subsequentSteps()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void KineIntegrator::nextStep()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void KineIntegrator::runInitialConditionTypeSolution()
@@ -44,10 +44,10 @@ void KineIntegrator::runInitialConditionTypeSolution()
 
 void KineIntegrator::iStep(size_t)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void KineIntegrator::selectOrder()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

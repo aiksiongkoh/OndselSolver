@@ -32,7 +32,7 @@ aG = distIeJe->value() - aConstant;
 
 void MbD::DistanceConstraintIJ::init_distIeJe()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::DistanceConstraintIJ::initialize()

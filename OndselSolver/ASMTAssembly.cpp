@@ -659,7 +659,7 @@ void MbD::ASMTAssembly::readKinematicIJs(std::vector<std::string>& lines)
 
 void MbD::ASMTAssembly::readKinematicIJ(std::vector<std::string>&)
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTAssembly::readConstraintSets(std::vector<std::string>& lines)
@@ -752,7 +752,7 @@ void MbD::ASMTAssembly::readJoints(std::vector<std::string>& lines)
             joint = CREATE<ASMTPointInPlaneJoint>::With();
         }
         else {
-            assert(false);
+            throw SimulationStoppingError("To be implemented.");
         }
         jointsLines.erase(jointsLines.begin());
         joint->parseASMT(jointsLines);
@@ -787,7 +787,7 @@ void MbD::ASMTAssembly::readMotions(std::vector<std::string>& lines)
             motion = CREATE<ASMTAllowRotation>::With();
         }
         else {
-            assert(false);
+            throw SimulationStoppingError("To be implemented.");
         }
         motionsLines.erase(motionsLines.begin());
         motion->parseASMT(motionsLines);
@@ -816,7 +816,7 @@ void MbD::ASMTAssembly::readLimits(std::vector<std::string>& lines)
             limit = ASMTTranslationLimit::With();
         }
         else {
-            assert(false);
+            throw SimulationStoppingError("To be implemented.");
         }
         limitsLines.erase(limitsLines.begin());
         limit->parseASMT(limitsLines);
@@ -835,7 +835,7 @@ void MbD::ASMTAssembly::readGeneralConstraintSets(std::vector<std::string>& line
     auto it = std::find(lines.begin(), lines.end(), "\tForceTorques");
     std::vector<std::string> generalConstraintSetsLines(lines.begin(), it);
     while (!generalConstraintSetsLines.empty()) {
-        assert(false);
+        throw SimulationStoppingError("To be implemented.");
     }
     lines.erase(lines.begin(), it);
 }
@@ -856,7 +856,7 @@ void MbD::ASMTAssembly::readForcesTorques(std::vector<std::string>& lines)
             forceTorque->owner = this;
         }
         else {
-            assert(false);
+            throw SimulationStoppingError("To be implemented.");
         }
     }
     lines.erase(lines.begin(), it);
@@ -1092,7 +1092,7 @@ void MbD::ASMTAssembly::runDraggingLog(const std::string& fileName)
 
 void MbD::ASMTAssembly::outputFor(AnalysisType)
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTAssembly::preMbDrun(std::shared_ptr<System> mbdSys)
@@ -1112,7 +1112,7 @@ void MbD::ASMTAssembly::preMbDrunDragStep(std::shared_ptr<System> mbdSys, std::s
 
 void MbD::ASMTAssembly::postMbDrun()
 {
-    assert(false);
+    throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::ASMTAssembly::calcCharacteristicDimensions()

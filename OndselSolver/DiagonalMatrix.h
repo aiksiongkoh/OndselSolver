@@ -68,7 +68,7 @@ namespace MbD {
 	template<typename T>
 	inline DiagMatsptr<T> DiagonalMatrix<T>::times(T)
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline FColsptr<T> DiagonalMatrix<T>::timesFullColumn(FColsptr<T> fullCol)
@@ -133,7 +133,7 @@ namespace MbD {
 	template<typename T>
 	inline double DiagonalMatrix<T>::maxMagnitude()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return 0.0;
 	}
 	template<typename T>

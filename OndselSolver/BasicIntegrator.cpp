@@ -76,7 +76,7 @@ void BasicIntegrator::incrementTime()
 
 void BasicIntegrator::incrementTry()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void BasicIntegrator::initialize()

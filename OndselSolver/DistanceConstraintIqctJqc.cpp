@@ -12,7 +12,7 @@ using namespace MbD;
 
 MbD::DistanceConstraintIqctJqc::DistanceConstraintIqctJqc(EndFrmsptr frmi, EndFrmsptr frmj) : DistanceConstraintIqcJqc(frmi, frmj)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 ConstraintType MbD::DistanceConstraintIqctJqc::type()

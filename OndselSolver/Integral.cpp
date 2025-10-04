@@ -8,7 +8,7 @@ MbD::Integral::Integral(Symsptr arg) : ExpressionX(arg)
 
 MbD::Integral::Integral(Symsptr, Symsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Integral::arguments(Symsptr args)

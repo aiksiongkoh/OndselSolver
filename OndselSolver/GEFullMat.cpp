@@ -14,7 +14,7 @@ using namespace MbD;
 
 void GEFullMat::forwardEliminateWithPivot(size_t)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void GEFullMat::backSubstituteIntoDU()
@@ -35,17 +35,17 @@ void GEFullMat::backSubstituteIntoDU()
 
 void GEFullMat::postSolve()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void GEFullMat::preSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void GEFullMat::preSolvewithsaveOriginal(SpMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 double GEFullMat::getmatrixArowimaxMagnitude(size_t i)
@@ -68,6 +68,6 @@ FColDsptr GEFullMat::basicSolvewithsaveOriginal(FMatDsptr fullMat, FColDsptr ful
 
 FColDsptr GEFullMat::basicSolvewithsaveOriginal(SpMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return FColDsptr();
 }

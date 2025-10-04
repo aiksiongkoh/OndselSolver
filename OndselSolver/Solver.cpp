@@ -10,6 +10,7 @@
 
 #include "Solver.h"
 #include <string>
+#include "SimulationStoppingError.h"
 
 using namespace MbD;
 
@@ -28,22 +29,22 @@ void Solver::initializeLocally()
 
 void Solver::initializeGlobally()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Solver::assignEquationNumbers()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Solver::run()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Solver::preRun()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Solver::finalize()
@@ -56,15 +57,15 @@ void Solver::reportStats()
 
 void Solver::postRun()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void Solver::logString(const std::string&)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Solver::handleSingularMatrix()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

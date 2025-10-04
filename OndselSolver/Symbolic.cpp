@@ -82,13 +82,13 @@ void Symbolic::initialize()
 
 Symsptr MbD::Symbolic::differentiateWRT(Symsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return Symsptr();
 }
 
 Symsptr MbD::Symbolic::integrateWRT(Symsptr)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return Symsptr();
 }
 
@@ -123,13 +123,13 @@ Symsptr MbD::Symbolic::expandUntil(std::shared_ptr<std::unordered_set<Symsptr>> 
 
 Symsptr Symbolic::expandUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return sptr;
 }
 
 Symsptr Symbolic::simplifyUntil(Symsptr sptr, std::shared_ptr<std::unordered_set<Symsptr>>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return sptr;
 }
 
@@ -168,7 +168,7 @@ std::ostream& Symbolic::printOn(std::ostream& s) const
 
 std::shared_ptr<std::vector<Symsptr>> Symbolic::getTerms()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return std::make_shared<std::vector<Symsptr>>();
 }
 
@@ -179,31 +179,31 @@ void MbD::Symbolic::addTerm(Symsptr trm)
 
 double Symbolic::getValue()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
 double MbD::Symbolic::getValue(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return 0.0;
 }
 
 void MbD::Symbolic::setValue(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void MbD::Symbolic::createMbD(std::shared_ptr<System>, std::shared_ptr<Units>)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return;
 }
 
 Symsptr MbD::Symbolic::clonesptr()
 {
 	//Return shallow copy of *this wrapped in shared_ptr
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	return std::make_shared<Symbolic>(*this);
 }
 
@@ -219,7 +219,7 @@ bool MbD::Symbolic::isVariable()
 
 void MbD::Symbolic::setIntegrationConstant(double)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 Symsptr MbD::Symbolic::raisedTo(Symsptr x, Symsptr y)

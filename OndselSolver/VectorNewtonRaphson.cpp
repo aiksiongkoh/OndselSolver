@@ -20,7 +20,7 @@ using namespace MbD;
 
 void VectorNewtonRaphson::initializeGlobally()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//system->fillVarVector(x);
 }
 
@@ -40,7 +40,7 @@ std::shared_ptr<MatrixSolver> VectorNewtonRaphson::matrixSolverClassNew()
 
 void VectorNewtonRaphson::fillY()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void VectorNewtonRaphson::calcyNorm()
@@ -80,5 +80,5 @@ void VectorNewtonRaphson::xEqualxoldPlusdx()
 
 void VectorNewtonRaphson::handleSingularMatrix()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }

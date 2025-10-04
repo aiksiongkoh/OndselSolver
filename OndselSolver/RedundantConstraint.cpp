@@ -106,7 +106,7 @@ void RedundantConstraint::setqsuddotlam(FColDsptr)
 void RedundantConstraint::discontinuityAtaddTypeTo(double, std::shared_ptr<std::vector<DiscontinuityType>>)
 {
 	//"Reactivate all constraints."
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//| newSelf |
 	//newSelf : = self constraint.
 	//newSelf discontinuityAt : tstartNew addTypeTo : collection.

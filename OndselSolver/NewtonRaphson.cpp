@@ -39,7 +39,7 @@ void NewtonRaphson::initializeLocally()
 
 void NewtonRaphson::run()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 	//self preRun.
 	//self initializeLocally.
 	//self initializeGlobally.
@@ -98,7 +98,7 @@ bool NewtonRaphson::isConverged()
 
 void NewtonRaphson::askSystemToUpdate()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 bool NewtonRaphson::isConvergedToNumericalLimit()

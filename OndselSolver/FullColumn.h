@@ -89,7 +89,7 @@ namespace MbD {
 	template<typename T>
 	inline FColsptr<T> FullColumn<T>::times(T)
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 	}
 	template<typename T>
 	inline FColsptr<T> FullColumn<T>::negated()
@@ -204,7 +204,7 @@ namespace MbD {
 	template<typename T>
 	inline FColsptr<T> FullColumn<T>::simplified()
 	{
-		assert(false);
+		throw SimulationStoppingError("To be implemented.");
 		return FColsptr<T>();
 	}
 	template<typename T>

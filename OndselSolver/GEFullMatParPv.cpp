@@ -46,10 +46,10 @@ void GEFullMatParPv::doPivoting(size_t p)
 
 void GEFullMatParPv::postSolve()
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
 
 void GEFullMatParPv::preSolvewithsaveOriginal(FMatDsptr, FColDsptr, bool)
 {
-	assert(false);
+	throw SimulationStoppingError("To be implemented.");
 }
