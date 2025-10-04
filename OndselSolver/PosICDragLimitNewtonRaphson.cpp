@@ -22,19 +22,6 @@ void MbD::PosICDragLimitNewtonRaphson::preRun()
 
 }
 
-void MbD::PosICDragLimitNewtonRaphson::initializeGlobally()
-{
-	AnyPosICNewtonRaphson::initializeGlobally();
-	iterMax = system->iterMaxPosKine;
-	dxTol = system->errorTolPosKine;
-}
-
-void MbD::PosICDragLimitNewtonRaphson::setdragParts(std::shared_ptr<std::vector<std::shared_ptr<Part>>> dragParts)
-{
-    (void) dragParts;
-	assert(false);
-}
-
 void MbD::PosICDragLimitNewtonRaphson::run()
 {
 	preRun();
@@ -58,5 +45,5 @@ void MbD::PosICDragLimitNewtonRaphson::run()
 		system->deactivateLimits();
 		if (system->limitsSatisfied()) return;
 	}
-	throw SimulationStoppingError("Limits cannot be satisfiled.");
+	throw SimulationStoppingError("Limits cannot be satisfied.");
 }
