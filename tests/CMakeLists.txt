@@ -1,11 +1,14 @@
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
-)
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+find_package(GTest QUIET)
+if(NOT GTest_FOUND)
+    include(FetchContent)
+    FetchContent_Declare(
+      googletest
+      URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+    )
+    # For Windows: Prevent overriding the parent project's compiler/linker settings
+    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    FetchContent_MakeAvailable(googletest)
+endif()
 
 if(MSVC)
     add_compile_options(/wd4251)
@@ -53,14 +56,22 @@ target_sources(test_run
 	PRIVATE
 		${CMAKE_CURRENT_SOURCE_DIR}/test.cpp
 )
-target_link_libraries(test_run
-    gtest_main
-    gmock_main
-    ${Google_Tests_LIBS}
-    OndselSolver
-)
+if(GTest_FOUND)
+    target_link_libraries(test_run
+        GTest::gtest_main
+        GTest::gmock_main
+        OndselSolver
+    )
+else()
+    target_link_libraries(test_run
+        gtest_main
+        gmock_main
+        ${Google_Tests_LIBS}
+        OndselSolver
+    )
 
-include(GoogleTest)
+    include(GoogleTest)
+endif()
 # discovers tests by asking the compiled test executable to enumerate its tests
 set(CMAKE_GTEST_DISCOVER_TESTS_DISCOVERY_MODE PRE_TEST)
 
